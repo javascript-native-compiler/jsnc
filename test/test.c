@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <tap.h>
+#include "compiler/source_memory.h"
 
 int main(void) {
-  ok(1 == 1, "1 == 1 is true");
+  test_source_memory();
+
+  done_testing();
   return 0;
 }
