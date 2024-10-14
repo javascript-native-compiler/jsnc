@@ -16,4 +16,5 @@ void test_source_memory(void) {
   fread(src_, sizeof(char), 10, source.fp);
   src_[10] = '\0';
   is(src_, "const a=2;", "source content matches with const a=2;");
+  jsnc_source_close(&source);
 }
